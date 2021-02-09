@@ -18,4 +18,6 @@
 #  fk_rails_...  (value_id => "values".id)
 #
 class ValueAvailable < ApplicationRecord
+  belongs_to :optionAvailable
+  belongs_to :value
 end

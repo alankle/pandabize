@@ -18,4 +18,9 @@
 #  fk_rails_...  (option_id => options.id)
 #
 class OptionAvailable < ApplicationRecord
+  has_many :valueAvailables
+  has_many :values, through: :valueAvailables
+
+  belongs_to :bike
+  belongs_to :option
 end

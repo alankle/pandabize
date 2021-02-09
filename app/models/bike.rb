@@ -8,4 +8,8 @@
 #  updated_at  :datetime         not null
 #
 class Bike < ApplicationRecord
+  has_many :optionAvailables
+  has_many :options, through: :optionAvailables
+
+ 
 end

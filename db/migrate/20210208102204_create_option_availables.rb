@@ -6,7 +6,7 @@ class CreateOptionAvailables < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    add_index :option_availables, %i[bike_id option_id], unique: true
+    add_index :option_availables, %i[bike_id option_id], unique: false
     add_foreign_key :option_availables, :bikes, column: :bike_id
     add_foreign_key :option_availables, :options, column: :option_id
   end
