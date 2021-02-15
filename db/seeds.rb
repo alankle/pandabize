@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+ValueAvailable.destroy_all
+OptionAvailable.destroy_all
 Bike.destroy_all
 Option.destroy_all
 Value.destroy_all
-OptionAvailable.destroy_all
-ValueAvailable.destroy_all
 
 bike1 = Bike.create(description: 'Super Bike')
 

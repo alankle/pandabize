@@ -6,7 +6,7 @@ class CreateValueAvailables < ActiveRecord::Migration[6.0]
 
       t.timestamps
     end
-    add_index :value_availables, %i[optionAvailable_id value_id], unique: false
+    add_index :value_availables, %i[option_available_id value_id], unique: false
     add_foreign_key :value_availables, :option_availables, column: :option_available_id
     add_foreign_key :value_availables, :values, column: :value_id
   end

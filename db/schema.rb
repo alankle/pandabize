@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_103607) do
+ActiveRecord::Schema.define(version: 2021_02_12_145316) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -50,7 +50,7 @@ ActiveRecord::Schema.define(version: 2021_02_08_103607) do
     t.bigint "value_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["optionAvailable_id", "value_id"], name: "index_value_availables_on_optionAvailable_id_and_value_id", unique: true
+    t.index ["optionAvailable_id", "value_id"], name: "index_value_availables_on_optionAvailable_id_and_value_id"
   end
 
   create_table "values", force: :cascade do |t|
