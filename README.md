@@ -1,10 +1,13 @@
 # README for pandabize's Backend
+# Deploy en Heroku  :  https://safe-castle-17954.herokuapp.com/api/v1/bikes
 
 
 ## API available and testable throught Postman.
 ### skip_before_action :verify_authenticity_token has been added to allow Postman testing
 
 ### ERD/DB schema documentation : pandabize.pdf
+
+
 
 GET    /api/v1/bikes/:bike_id/options/:option_id/values(.:format)                               api/v1/values#index
 
@@ -56,4 +59,3 @@ PUT    /api/v1/values/:id(.:format)                                             
 
 DELETE /api/v1/values/:id(.:format)  
 
-# Deploy en Heroku  : 
